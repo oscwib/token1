@@ -28,7 +28,7 @@ print "Login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" [􀜁􀅹Salute􏿿] | Keyboard| [􀜁􀅹Salute􏿿]
+helpMessage =""" [􀜁􀅹Salute􏿿] | Keyboard | [􀜁􀅹Salute􏿿]
 
 [􀜁􀅹Salute􏿿] Hi # yah begitulah #
 [􀜁􀅹Salute􏿿] Creator # Creator / Admin #
@@ -58,7 +58,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots = [dmid,Amid,Bmid,Cmid]
 admin = ["ube187443474747c3ec352e7efeb48c1b"]
-staff = ["ube187443474747c3ec352e7efeb48c1b","ube187443474747c3ec352e7efeb48c1b","ube187443474747c3ec352e7efeb48c1b"]
+staff = ["ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd"]
 adminMID = "ube187443474747c3ec352e7efeb48c1b"
 wait = {
     'contact':True,

@@ -28,7 +28,7 @@ print "Login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" [􀜁􀅹Salute􏿿] | Keyboard | [􀜁􀅹Salute􏿿]
+helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 
 [􀜁􀅹Salute􏿿] Hi # yah begitulah #
 [􀜁􀅹Salute􏿿] Creator # Creator / Admin #
@@ -47,7 +47,7 @@ helpMessage =""" [􀜁􀅹Salute􏿿] | Keyboard | [􀜁􀅹Salute􏿿]
 [􀜁􀅹Salute􏿿] /check # Check sider #
 [􀜁􀅹Salute􏿿] /lagu # Cari lagu , Contoh : /lagu iwan fals ibu #
 [􀜁􀅹Salute􏿿] /lirik # Cari Lirik , Contoh : /lirik Payung teduh Akad #
-[􀜁􀅹Salute􏿿] /ig # Cek profile Instagram , Contoh : /ig hairul.ones #
+[􀜁􀅹Salute􏿿] /ig # Cek profile Instagram , Contoh : /ig instagram #
 [􀜁􀅹Salute􏿿] /youtube # Scrap link youtube , Contoh : /youtube young dumb & broke #"""
 
 cl = ki = kk = kc
@@ -68,8 +68,8 @@ wait = {
     'timeline':False,
     'autoAdd':False,
     "lang":"JP",
-    "comment":"",
-    "commentOn":False,
+    "comment":"Like Back",
+    "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
@@ -79,10 +79,10 @@ wait = {
     "wblacklist":False,
     "dblacklist":False,
     "protectionOn":True,
-    "protect":False,
+    "protect":True,
     "cancelprotect":True,
     "inviteprotect":True,
-    "linkprotect":False,
+    "linkprotect":True,
     }
 
 wait2 = {
@@ -579,7 +579,7 @@ def bot(op):
                 adm = 'ube187443474747c3ec352e7efeb48c1b'
                 msg.contentMetadata = {'mid': adm}
                 cl.sendMessage(msg)
-                cl.sendText(msg.to,"Instagram : @hairul.ones\nNama : Aked\nZodiak : Taurus")
+                cl.sendText(msg.to,"Instagram : @dekaprabowoo\nNama : Aked\nZodiak : Taurus")
 #----------------------------------------------------------------------------
 #--------------------------------- GIFT -------------------------------------
             elif msg.text.lower() in ["gift"]:
@@ -1047,7 +1047,7 @@ def bot(op):
 #----------------------------------------------------------------------------
 #------------------------------- JOIN GROUP ---------------------------------
             elif msg.text.lower() in ["join"]:
-                if msg.from_ in staff:
+                if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1074,9 +1074,9 @@ def bot(op):
                     print "[Command] Bye"
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
+                        ki.leaveGroup(msg.to, "Terima Kasih")
+                        kk.leaveGroup(msg.to, "Jangan Lupa Add Saya")
+                        kc.leaveGroup(msg.to, "Assalamulaikum")
                     except:
                         pass
 #----------------------------------------------------------------------------
@@ -1101,8 +1101,7 @@ def bot(op):
 #-------------------------------- WELCOME -----------------------------------
             if msg.text.lower() in ["wc","welcome"]:
                 ginfo = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di Grup " + str(ginfo.name))
-                cl.sendText(msg.to,"Owner Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName)
+                cl.sendText(msg.to,"Selamat Datang Di " + str(ginfo.name))
 #----------------------------------------------------------------------------
 #------------------------------- KICK BY TAG --------------------------------
             elif "nk " in msg.text:
@@ -1218,7 +1217,7 @@ def bot(op):
 #------------------------------- CHECK SIDER --------------------------------
             if msg.text.lower() in ["/set"]:
                 if msg.toType == 2:
-                    cl.sendText(msg.to, "Point Set ♪")
+                    cl.sendText(msg.to, "Sini Muncul")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -1457,10 +1456,10 @@ def bot(op):
 #----------------------------------------------------------------------------
 #--------------------------------- ABSEN ------------------------------------
             elif msg.text.lower() in ["absen"]:
-                cl.sendText(msg.to,"Siap Boy 􀜁􀅹Salute􏿿")
-                ki.sendText(msg.to,"Siap Boy  􀜁􀅹Salute􏿿")
-                kk.sendText(msg.to,"Siap Boy 􀜁􀅹Salute􏿿")
-                kc.sendText(msg.to,"Siap Boy 􀜁􀅹Salute􏿿")
+                cl.sendText(msg.to,"Hadir Bosku 􀜁􀅹Salute􏿿")
+                ki.sendText(msg.to,"Hadir  􀜁􀅹Salute􏿿")
+                kk.sendText(msg.to,"Selalu Hadir 􀜁􀅹Salute􏿿")
+                kc.sendText(msg.to,"Come Back 􀜁􀅹Salute􏿿")
 #----------------------------------------------------------------------------
 #------------------------------ RESPON SPEED --------------------------------
             elif msg.text.lower() in ["respon"]:

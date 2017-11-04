@@ -1098,7 +1098,7 @@ def bot(op):
 #-------------------------------- WELCOME -----------------------------------
             if msg.text.lower() in ["wc","welcome"]:
                 ginfo = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di " + str(ginfo.name) Semoga Kalian Betah Di Grup Ini, Kami Keluarga.)
+                cl.sendText(msg.to,"Selamat Datang Di " + str(ginfo.name))
                 cl.sendText(msg.to,"Owner Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName)
 #----------------------------------------------------------------------------
 #------------------------------- KICK BY TAG --------------------------------

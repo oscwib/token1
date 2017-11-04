@@ -50,6 +50,7 @@ helpMessage =""" Kevin | Bot Command
 ☆ /ig ( Cek profile Instagram , Contoh : /ig dekaprabowoo )
 ☆ /youtube ( Scrap link youtube , Contoh : /youtube young dumb & broke )"""
 
+cl = ki = kk = kc
 KAC=[cl,ki,kk,kc]
 dmid = cl.getProfile().mid
 Amid = ki.getProfile().mid

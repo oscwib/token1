@@ -48,7 +48,38 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] /lagu # Cari lagu , Contoh : /lagu iwan fals ibu #
 [􀜁􀅹Salute􏿿] /lirik # Cari Lirik , Contoh : /lirik Payung teduh Akad #
 [􀜁􀅹Salute􏿿] /ig # Cek profile Instagram , Contoh : /ig instagram #
-[􀜁􀅹Salute􏿿] /youtube # Scrap link youtube , Contoh : /youtube young dumb & broke #"""
+[􀜁􀅹Salute􏿿] /youtube # Scrap link youtube , Contoh : /youtube young dumb & broke #
+
+􀜁􀅹Salute􏿿 | Keyboard (Staff) | 􀜁􀅹Salute􏿿
+
+[􀜁􀅹Salute􏿿] bye # Mengusir Bot (Di Aktifin Admin)
+[􀜁􀅹Salute􏿿] /unban > Tidak Di Banned
+[􀜁􀅹Salute􏿿] /ban > Target Di Banned
+[􀜁􀅹Salute􏿿] join > Membawa Pasukan (4 Bot)
+[􀜁􀅹Salute􏿿] ourl > Open Link Grup *Tanpa Staaff/Admin
+[􀜁􀅹Salute􏿿] curl > Menutup Link Grup *Tanpa Staff/Admin
+[􀜁􀅹Salute􏿿] /spam > Menyempam Kata
+
+􀜁􀅹Salute􏿿 | Keyboard (Admin) | 􀜁􀅹Salute􏿿
+
+[􀜁􀅹Salute􏿿] nk @tag -> Mengkick Target
+[􀜁􀅹Salute􏿿] /bcgc -> Untuk Broadcast Group
+[􀜁􀅹Salute􏿿] /bc -> Untuk Broadcast Melalui Pc
+[􀜁􀅹Salute􏿿] /grup id -> Mengentahui Grup List
+[􀜁􀅹Salute􏿿] /bio -> Mengedit Bio
+[􀜁􀅹Salute􏿿] /gn -> Mengganti Nama Grup
+[􀜁􀅹Salute􏿿] /cn -> Mengganti Nama Bot 1,2,3,4
+
+[􀜁􀅹Salute􏿿] contact on/off
+[􀜁􀅹Salute􏿿] join on/off
+[􀜁􀅹Salute􏿿] Gcancel on/off
+[􀜁􀅹Salute􏿿] leave on/off
+[􀜁􀅹Salute􏿿] protect on/off
+[􀜁􀅹Salute􏿿] qr on/off
+[􀜁􀅹Salute􏿿] invite on/off
+[􀜁􀅹Salute􏿿] cancel on/off
+
+[􀜁􀅹Salute􏿿] Mulai -> Meratakan Semua Anggota [􀜁􀅹Salute􏿿]"""
 
 cl = ki = kk = kc
 KAC=[cl,ki,kk,kc]
@@ -57,9 +88,9 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots = [dmid,Amid,Bmid,Cmid]
-admin = ["ube187443474747c3ec352e7efeb48c1b"]
+admin = ["ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd"]
 staff = ["ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd"]
-adminMID = "ube187443474747c3ec352e7efeb48c1b"
+adminMID = "ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd""
 wait = {
     'contact':True,
     'autoJoin':True,

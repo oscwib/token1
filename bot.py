@@ -28,7 +28,7 @@ print "Login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
+helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 
 [􀜁􀅹Salute􏿿] Hi # yah begitulah #
 [􀜁􀅹Salute􏿿] Creator # Creator / Admin #
@@ -50,7 +50,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] /ig # Cek profile Instagram , Contoh : /ig instagram #
 [􀜁􀅹Salute􏿿] /youtube # Scrap link youtube , Contoh : /youtube young dumb & broke #
 
-􀜁􀅹Salute􏿿 | Keyboard (Staff) | 􀜁􀅹Salute􏿿
+􀜁􀅹Salute􏿿 | Keyboard (Admin) | 􀜁􀅹Salute􏿿
 
 [􀜁􀅹Salute􏿿] bye # Mengusir Bot (Di Aktifin Admin)
 [􀜁􀅹Salute􏿿] /unban > Tidak Di Banned
@@ -58,9 +58,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] join > Membawa Pasukan (4 Bot)
 [􀜁􀅹Salute􏿿] ourl > Open Link Grup *Tanpa Staaff/Admin
 [􀜁􀅹Salute􏿿] curl > Menutup Link Grup *Tanpa Staff/Admin
-[􀜁􀅹Salute􏿿] /spam > Menyempam Kata
-
-􀜁􀅹Salute􏿿 | Keyboard (Admin) | 􀜁􀅹Salute􏿿
+[􀜁􀅹Salute􏿿] /spam (Jumlah) (Kata) > Menyempam Kata
 
 [􀜁􀅹Salute􏿿] nk @tag -> Mengkick Target
 [􀜁􀅹Salute􏿿] /bcgc -> Untuk Broadcast Group
@@ -69,6 +67,8 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] /bio -> Mengedit Bio
 [􀜁􀅹Salute􏿿] /gn -> Mengganti Nama Grup
 [􀜁􀅹Salute􏿿] /cn -> Mengganti Nama Bot 1,2,3,4
+[􀜁􀅹Salute􏿿] /removechat -> remove chat
+[􀜁􀅹Salute􏿿] kill -> gatau wkwkwk
 
 [􀜁􀅹Salute􏿿] contact on/off
 [􀜁􀅹Salute􏿿] join on/off
@@ -79,7 +79,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] invite on/off
 [􀜁􀅹Salute􏿿] cancel on/off
 
-[􀜁􀅹Salute􏿿] Mulai -> Meratakan Semua Anggota [􀜁􀅹Salute􏿿]"""
+[􀜁􀅹Salute􏿿] Mulai -> Meratakan  [􀜁􀅹Salute􏿿]"""
 
 cl = ki = kk = kc
 KAC=[cl,ki,kk,kc]
@@ -88,8 +88,8 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots = [dmid,Amid,Bmid,Cmid]
-admin = ["ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd"]
-staff = ["ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd"]
+admin = ["ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd","ud18caee2faa4cf85c1dbfc37589ce7d1"]
+staff = ["ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd"]
 adminMID = "ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd"
 wait = {
     'contact':True,
@@ -580,7 +580,7 @@ def bot(op):
 #----------------------------------------------------------------------------
 #---------------------------- SPAM CHAT -------------------------------------
             elif "/spam " in msg.text:
-                if msg.from_ in staff:
+                if msg.from_ in admin:
                     txt = msg.text.split(" ")
                     jmlh = int(txt[1])
                     teks = msg.text.replace("/spam " + str(jmlh) + " ","")
@@ -1101,12 +1101,12 @@ def bot(op):
 #-------------------------------- OUT GROUP ---------------------------------
             elif msg.text.lower() in ["bye"]:
                 if msg.toType == 2:
-                  if msg.from_ in staff:
+                  if msg.from_ in admin:
                     print "[Command] Bye"
                     ginfo = cl.getGroup(msg.to)
                     try:
                         ki.leaveGroup(msg.to, "Terima Kasih")
-                        kk.leaveGroup(msg.to, "Jangan Lupa Add Saya")
+                        kk.leaveGroup(msg.to, "Jangan Lupa Add Saya dan masukin grup yang lain")
                         kc.leaveGroup(msg.to, "Assalamulaikum")
                     except:
                         pass
@@ -1151,7 +1151,7 @@ def bot(op):
 #----------------------------------------------------------------------------
 #------------------------------ BAN BY TAG ----------------------------------
             elif "/ban " in msg.text:
-                if msg.from_ in staff:
+                if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
                     targets = []
@@ -1169,7 +1169,7 @@ def bot(op):
 #----------------------------------------------------------------------------
 #------------------------------- UNBAN BY TAG -------------------------------
             elif "/unban " in msg.text:
-                if msg.from_ in staff:
+                if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
                     targets = []
@@ -1369,9 +1369,9 @@ def bot(op):
                                 cl.sendText(msg.to,"Upload image failed.")
 #----------------------------------------------------------------------------
 #--------------------------------- HI / HAI ---------------------------------
-            elif msg.text.lower() in ["hi","hai","hy"]:
+            elif msg.text.lower() in ["hi","hai","sayang"]:
                 if msg.from_ in admin:
-                    beb = "Hi Beb " + cl.getContact(msg.from_).displayName #+ " 􀸂􀆇starry heart􏿿"
+                    beb = "Hi sayang " + cl.getContact(msg.from_).displayName #+ " 􀸂􀆇starry heart􏿿"
                     kk.sendText(msg.to,beb)
                 else:
                     hi = "Hi " + cl.getContact(msg.from_).displayName
@@ -1486,11 +1486,11 @@ def bot(op):
                     cl.sendText(msg.to,'Error.')
 #----------------------------------------------------------------------------
 #--------------------------------- ABSEN ------------------------------------
-            elif msg.text.lower() in ["absen"]:
-                cl.sendText(msg.to,"Hadir Bosku 􀜁􀅹Salute􏿿")
-                ki.sendText(msg.to,"Hadir  􀜁􀅹Salute􏿿")
-                kk.sendText(msg.to,"Selalu Hadir 􀜁􀅹Salute􏿿")
-                kc.sendText(msg.to,"Come Back 􀜁􀅹Salute􏿿")
+            elif msg.text.lower() in ["sayang"]:
+                cl.sendText(msg.to,"apa sayang 􀜁􀅹Salute􏿿")
+                ki.sendText(msg.to,"Hadir sayang  􀜁􀅹Salute􏿿")
+                kk.sendText(msg.to,"aku mencintai kamu 􀜁􀅹Salute􏿿")
+                kc.sendText(msg.to,"jangan lupakan aku sayang 􀜁􀅹Salute􏿿")
 #----------------------------------------------------------------------------
 #------------------------------ RESPON SPEED --------------------------------
             elif msg.text.lower() in ["respon"]:

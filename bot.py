@@ -1105,9 +1105,9 @@ def bot(op):
                     print "[Command] Bye"
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.leaveGroup(msg.to, "Terima Kasih")
-                        kk.leaveGroup(msg.to, "Jangan Lupa Add Saya dan masukin grup yang lain")
-                        kc.leaveGroup(msg.to, "Assalamulaikum")
+                        ki.leaveGroup(msg.to)
+                        kk.leaveGroup(msg.to)
+                        kc.leaveGroup(msg.to)
                     except:
                         pass
 #----------------------------------------------------------------------------

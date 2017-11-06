@@ -9,19 +9,19 @@ from threading import Thread
 from pyowm import OWM
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EmgbedROTs75UE3O2WQb.VHH0q0Dhr8pSns5/+RsmgW.OHqOLdHoBZdsZl2+LmbDMkHrf0nEXlfj2KFYlvHy0vQ=")
 cl.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(qr=True)
+kk.login(token="EmS9ZXMFMWEaP2LUX5K3.b151yOadpUwvZ3Q/9r80aW.XB2uXnafviZftP31JSZm/mR9MaaexIPhEzroZZWKMZc=")
 kk.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="EmKbkhuuCblm2zich5fd.UvZQ8iaX1kDhGbAShThZ3q.wS78xQPgO06pV5FuEv+jeSiKm0f5gh9F9YTy88taAt4=")
 ki.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(qr=True)
+kc.login(token="EmwxDpx20t1Z0bq6ARS8.bfmfUwtccO+1N7EuVwD+Ma.m95weQDJpqXALuVM8Zybj4yw/p57rJvYS1EZBGYl9sU=")
 kc.loginResult()
 
 print "Login success"
@@ -81,7 +81,6 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 
 [􀜁􀅹Salute􏿿] Mulai -> Meratakan  [􀜁􀅹Salute􏿿]"""
 
-cl = ki = kk = kc
 KAC=[cl,ki,kk,kc]
 dmid = cl.getProfile().mid
 Amid = ki.getProfile().mid

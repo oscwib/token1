@@ -9,7 +9,7 @@ from threading import Thread
 from pyowm import OWM
 
 cl = LINETCR.LINE()
-cl.login(token="EmgbedROTs75UE3O2WQb.VHH0q0Dhr8pSns5/+RsmgW.OHqOLdHoBZdsZl2+LmbDMkHrf0nEXlfj2KFYlvHy0vQ=")
+cl.login(token="EmwxDpx20t1Z0bq6ARS8.bfmfUwtccO+1N7EuVwD+Ma.m95weQDJpqXALuVM8Zybj4yw/p57rJvYS1EZBGYl9sU=")
 cl.loginResult()
 
 kk = LINETCR.LINE()
@@ -21,7 +21,7 @@ ki.login(token="EmKbkhuuCblm2zich5fd.UvZQ8iaX1kDhGbAShThZ3q.wS78xQPgO06pV5FuEv+j
 ki.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EmwxDpx20t1Z0bq6ARS8.bfmfUwtccO+1N7EuVwD+Ma.m95weQDJpqXALuVM8Zybj4yw/p57rJvYS1EZBGYl9sU=")
+kc.login(token="EmgbedROTs75UE3O2WQb.VHH0q0Dhr8pSns5/+RsmgW.OHqOLdHoBZdsZl2+LmbDMkHrf0nEXlfj2KFYlvHy0vQ=")
 kc.loginResult()
 
 print "Login success"

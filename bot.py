@@ -267,7 +267,6 @@ def bot(op):
                         pass
                     try:
                         ki.kickoutFromGroup(op.param1,[op.param2])
-                        ki.inviteIntoGroup(op.param1,[op.param1,[op.param3])
                     except:
                         try:
                             random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])

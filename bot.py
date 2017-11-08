@@ -30,25 +30,25 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 
-[􀜁􀅹Salute􏿿] Hi # yah begitulah #
-[􀜁􀅹Salute􏿿] Creator # Creator / Admin #
-[􀜁􀅹Salute􏿿] Me # Info Contact #
-[􀜁􀅹Salute􏿿] Gift # Gift Thema #
-[􀜁􀅹Salute􏿿] Ginfo # Group info #
-[􀜁􀅹Salute􏿿] Welcome # yah begitulah #
-[􀜁􀅹Salute􏿿] Cancel # Cancel member pending #
-[􀜁􀅹Salute􏿿] Tagall # Tagall member group #
-[􀜁􀅹Salute􏿿] pp @tag # PP yang di tag #
-[􀜁􀅹Salute􏿿] cover @tag # Cover yang di tag #
-[􀜁􀅹Salute􏿿] Kedapkedip # Teks kekinian 􀜁􀅔Har Har􏿿 , Contoh : Kedapkedip irulz #
-[􀜁􀅹Salute􏿿] /apakah # Kerang ajaib #
-[􀜁􀅹Salute􏿿] /translate-en # Translate Indo - EN , Contoh : /translate-en Grup # 
-[􀜁􀅹Salute􏿿] /set # Set point #
-[􀜁􀅹Salute􏿿] /check # Check sider #
-[􀜁􀅹Salute􏿿] /lagu # Cari lagu , Contoh : /lagu iwan fals ibu #
-[􀜁􀅹Salute􏿿] /lirik # Cari Lirik , Contoh : /lirik Payung teduh Akad #
-[􀜁􀅹Salute􏿿] /ig # Cek profile Instagram , Contoh : /ig instagram #
-[􀜁􀅹Salute􏿿] /youtube # Scrap link youtube , Contoh : /youtube young dumb & broke #
+[􀜁􀅹Salute􏿿] Hi  (yah begitulah)
+[􀜁􀅹Salute􏿿] Creator ( Creator / Admin )
+[􀜁􀅹Salute􏿿] Me ( Info Contact )
+[􀜁􀅹Salute􏿿] Gift ( Gift Thema )
+[􀜁􀅹Salute􏿿] Ginfo ( Group info )
+[􀜁􀅹Salute􏿿] Welcome ( yah begitulah )
+[􀜁􀅹Salute􏿿] Cancel ( Cancel member pending )
+[􀜁􀅹Salute􏿿] Tagall ( Tagall member group )
+[􀜁􀅹Salute􏿿] pp @tag ( PP yang di tag )
+[􀜁􀅹Salute􏿿] cover @tag ( Cover yang di tag )
+[􀜁􀅹Salute􏿿] Kedapkedip ( Teks kekinian 􀜁􀅔Har Har􏿿 , Contoh : Kedapkedip  )
+[􀜁􀅹Salute􏿿] /apakah ( Kerang ajaib )
+[􀜁􀅹Salute􏿿] /translate-en ( Translate Indo - EN , Contoh : /translate-en Grup ) 
+[􀜁􀅹Salute􏿿] /set ( Set point )
+[􀜁􀅹Salute􏿿] /check ( Check sider )
+[􀜁􀅹Salute􏿿] /lagu ( Cari lagu , Contoh : /lagu iwan fals ibu )
+[􀜁􀅹Salute􏿿] /lirik ( Cari Lirik , Contoh : /lirik Payung teduh Akad )
+[􀜁􀅹Salute􏿿] /ig ( Cek profile Instagram , Contoh : /ig instagram )
+[􀜁􀅹Salute􏿿] /youtube ( Scrap link youtube , Contoh : /youtube young dumb & broke )
 
 􀜁􀅹Salute􏿿 | Keyboard (Admin) | 􀜁􀅹Salute􏿿
 
@@ -60,7 +60,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] curl > Menutup Link Grup *Tanpa Staff/Admin
 [􀜁􀅹Salute􏿿] /spam (Jumlah) (Kata) > Menyempam Kata
 
-[􀜁􀅹Salute􏿿] nk @tag -> Mengkick Target
+[􀜁􀅹Salute􏿿] /nk @tag -> Mengkick Target
 [􀜁􀅹Salute􏿿] /bcgc -> Untuk Broadcast Group
 [􀜁􀅹Salute􏿿] /bc -> Untuk Broadcast Melalui Pc
 [􀜁􀅹Salute􏿿] /grup id -> Mengentahui Grup List
@@ -68,7 +68,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] /gn -> Mengganti Nama Grup
 [􀜁􀅹Salute􏿿] /cn -> Mengganti Nama Bot 1,2,3,4
 [􀜁􀅹Salute􏿿] /removechat -> remove chat
-[􀜁􀅹Salute􏿿] kill -> gatau wkwkwk
+[􀜁􀅹Salute􏿿] kill -> kick yang ban
 
 [􀜁􀅹Salute􏿿] contact on/off
 [􀜁􀅹Salute􏿿] join on/off
@@ -95,7 +95,7 @@ wait = {
     'autoJoin':True,
     'autoCancel':{"on":True,"members":1},
     'leaveRoom':True,
-    'timeline':False,
+    'timeline':True,
     'autoAdd':False,
     "lang":"JP",
     "comment":"Like Back",
@@ -108,10 +108,10 @@ wait = {
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "protectionOn":True,
-    "protect":True,
+    "protectionOn":False,
+    "protect":False,
     "cancelprotect":True,
-    "inviteprotect":True,
+    "inviteprotect":False,
     "linkprotect":True,
     }
 
@@ -230,7 +230,7 @@ def bot(op):
                     if wait["autoJoin"] == True:
                         cl.acceptGroupInvitation(op.param1)
                         print "Bot 1 Join"
-                        cl.sendText(op.param1,'Hallo Semua, Hormat 􀜁􀅹Salute􏿿')
+                        cl.sendText(op.param1,'Hallo Generasi, Hormat 􀜁􀅹Salute􏿿')
                         cl.sendText(op.param1,'Daftar Command? Ketik /help')
                     else:
                         print "Error"
@@ -238,18 +238,21 @@ def bot(op):
                     if wait["autoJoin"] == True:
                         ki.acceptGroupInvitation(op.param1)
                         print "Bot 2 Join"
+                        ki.sendText(op.param1,'welcome')
                     else:
                         print "Error"
                 if Bmid in op.param3:
                     if wait["autoJoin"] == True:
                         kk.acceptGroupInvitation(op.param1)
                         print "Bot 3 Join"
+                        kk.sendText(op.param1,'apa kabar generasi jaman now')
                     else:
                         print "Error"
                 if Cmid in op.param3:
                     if wait["autoJoin"] == True:
                         kc.acceptGroupInvitation(op.param1)
                         print "Bot 4 Join"
+                        kc.sendText(op.param1,'dasar generasi micin')
                     else:
                         print "Error"
 
@@ -264,6 +267,7 @@ def bot(op):
                         pass
                     try:
                         ki.kickoutFromGroup(op.param1,[op.param2])
+                        ki.inviteIntoGroup(op.param1,[op.param1,[op.param3])
                     except:
                         try:
                             random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -300,6 +304,8 @@ def bot(op):
                     try:
                         kk.kickoutFromGroup(op.param1,[op.param2])
                         kc.kickoutFromGroup(op.param1,[op.param2])
+                        kk.inviteIntoGroup(op.param1,[op.param1,[op.param3])
+                        kc.inviteIntoGroup(op.param1,[op.param1,[op.param3])
                     except:
                         try:
                             random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -335,6 +341,8 @@ def bot(op):
                     try:
                         kc.kickoutFromGroup(op.param1,[op.param2])
                         kk.kickoutFromGroup(op.param1,[op.param2])
+                        kc.inviteIntoGroup(op.param1,[op.param1,[op.param3])
+                        kk.inviteIntoGroup(op.param1,[op.param1,[op.param3])
                     except:
                         try:
                             random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -372,6 +380,8 @@ def bot(op):
                     try:
                         cl.kickoutFromGroup(op.param1,[op.param2])
                         kk.kickoutFromGroup(op.param1,[op.param2])
+                        cl.inviteIntoGroup(op.param1,[op.param1,[op.param3])
+                        kk.inviteIntoGroup(op.param1,[op.param1,[op.param3])
                     except:
                         try:
                             random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -765,7 +775,7 @@ def bot(op):
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
                 cl.sendMessage(msg)
-            elif msg.text in ["Sayang"]:
+            elif msg.text in ["Lah"]:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -1368,7 +1378,7 @@ def bot(op):
                                 cl.sendText(msg.to,"Upload image failed.")
 #----------------------------------------------------------------------------
 #--------------------------------- HI / HAI ---------------------------------
-            elif msg.text.lower() in ["hi","hai","sayang"]:
+            elif msg.text.lower() in ["hi","hai","apa"]:
                 if msg.from_ in admin:
                     beb = "Hi sayang " + cl.getContact(msg.from_).displayName #+ " 􀸂􀆇starry heart􏿿"
                     kk.sendText(msg.to,beb)
@@ -1485,11 +1495,11 @@ def bot(op):
                     cl.sendText(msg.to,'Error.')
 #----------------------------------------------------------------------------
 #--------------------------------- ABSEN ------------------------------------
-            elif msg.text.lower() in ["sayang"]:
-                cl.sendText(msg.to,"apa sayang 􀜁􀅹Salute􏿿")
-                ki.sendText(msg.to,"Hadir sayang  􀜁􀅹Salute􏿿")
-                kk.sendText(msg.to,"aku mencintai kamu 􀜁􀅹Salute􏿿")
-                kc.sendText(msg.to,"jangan lupakan aku sayang 􀜁􀅹Salute􏿿")
+            elif msg.text.lower() in ["absen"]:
+                cl.sendText(msg.to,"Hadir Bosku ????Salute??")
+                ki.sendText(msg.to,"Hadir  ????Salute??")
+                kk.sendText(msg.to,"Selalu Hadir ????Salute??")
+                kc.sendText(msg.to,"Come Back ????Salute??")
 #----------------------------------------------------------------------------
 #------------------------------ RESPON SPEED --------------------------------
             elif msg.text.lower() in ["respon"]:
